@@ -1,0 +1,18 @@
+<%- include("head") %>
+<%- include("header") %>
+<div class="ps-row ps-padding-64" id="menu">
+    <div class="ps-col l6 ps-padding-large">
+      
+      <h1 class="ps-center"><%= producto.nombre %></h1>
+      <br />
+        <p class="ps-text-grey">
+          <%= producto.descripcion %><br/>
+          <%= producto.precio %>
+        </p> 
+       
+    </div>
+    <div class="ps-col l6 ps-padding-large ps-img-menu">
+        <img src="/images/<%= producto.imagen %>"></img>
+      </div>
+    </div>
+    <%- include("footer") %>
